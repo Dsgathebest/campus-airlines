@@ -1,0 +1,29 @@
+{
+  "clientes": [
+    {
+      "cc": "13212313",
+      "nombres": "Daniel",
+      "apellidos": "Gómez",
+      "fechanac": "2003-10-05",
+      "telefono": "31246464815",
+      "email": "aaaa@gmail.com",
+      "ciudad": "bogota",
+      "pais": "Colombia",
+      "id": 1
+    },
+    {
+      "cc": "12346456132",
+      "nombres": "Santiago",
+      "apellidos": "Abril",
+      "fechanac": "1998-12-06",
+      "telefono": "312578461",
+      "email": "bbbb@gmail.com",
+      "ciudad": "bogota",
+      "pais": "Colombia",
+      "id": 2
+    }
+  ],
+  "rutas": [],
+  "flota": [],
+  "personal": []
+}

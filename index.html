@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/boostrap/bootstrap.min.css">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <script src="/js/boostrap/bootstrap.min.js" defer></script>
+    <script src="/app.js" type="module" defer></script>
+
+    <title>Campus Airlines</title>
+</head>
+<body>
+    <header></header>
+    
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <div>
+                    <img src="/img/logoPrincipal-s.png" width="40px" alt="">
+                    <a class="navbar-brand" href="#">Campus Airlines</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active align-middle" data-bs-toggle="modal" data-bs-target="#cliente">
+                                <span class="ms-1 d-none d-sm-inline">Clientes</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active align-middle" data-bs-toggle="modal" data-bs-target="#embarque">
+                                <span class="ms-1 d-none d-sm-inline">Embarque</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active align-middle" data-bs-toggle="modal" data-bs-target="#etiquetas">
+                                <span class="ms-1 d-none d-sm-inline">Etiquetas</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active align-middle" data-bs-toggle="modal" data-bs-target="#flota">
+                                <span class="ms-1 d-none d-sm-inline">Flota</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active align-middle" data-bs-toggle="modal" data-bs-target="#personal">
+                                <span class="ms-1 d-none d-sm-inline">Personal</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active align-middle" data-bs-toggle="modal" data-bs-target="#rutas">
+                                <span class="ms-1 d-none d-sm-inline">Rutas</span>
+                            </a>
+                        </li>   
+                                           
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+    <main>
+        <section id="moduloClientes">
+            <modulo-clientes></modulo-clientes>
+        </section>
+        <section id="listado">
+            <div class="d-flex align-items-center">
+                <h3>Listado de clientes </h3>
+                <button class="btn btn-primary m-3" id="verLista">Ver</button>
+                <button class="btn btn-danger m-3" id="cerrarLista">Cerrar</button>
+            </div>
+            <div id="lista" class="container card">
+                <lista-cliente></lista-cliente>
+            </div>
+        </section>
+        <section id="moduloEmbarque">
+            <modulo-embarque></modulo-embarque>
+        </section>
+        <section id="moduloEtiquetas">
+            <modulo-etiquetas></modulo-etiquetas>
+        </section>
+        <section id="moduloFlota">
+            <modulo-flota></modulo-flota>
+        </section>
+        <section id="moduloPersonal">
+            <modulo-personal></modulo-personal>
+        </section>
+        <section id="moduloRutas">
+            <modulo-rutas></modulo-ruta>
+        </section>
+        
+        
+        <modulo-embarque></modulo-embarque>
+    </main>
+    <footer></footer>
+</body>
+</html>
+<!-- <div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+        <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+            <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <span class="fs-5 d-none d-sm-inline">Menu</span>
+            </a>
+            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link align-middle px-0">
+                    <i class='bx bx-home-alt'></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link px-0 align-middle" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <i class='bx bx-user-plus' ></i> <span class="ms-1 d-none d-sm-inline">Clientes</span></a>
+            </li>
+            <li>
+                <a href="#" class="nav-link px-0 align-middle">
+                    <i class='bx bx-search-alt-2' ></i> <span class="ms-1 d-none d-sm-inline">Buscador</span> </a>
+            </li>
+            </ul>
+        </div>
+        </div>
+        <div class="col py-3">
+        <div class="container" id="lstClientes">
+            <customer-list></customer-list>
+        </div> -->
+        <!-- Modal -->
+        <!-- <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <customer-form></customer-form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div> -->
